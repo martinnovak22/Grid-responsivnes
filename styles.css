@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Poppins", serif;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    line-height: 1.2rem;
+}
+
+h3 {
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 10px;
+    color: hsl(229, 6%, 66%);
+}
+
+.bold {
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: hsl(234, 12%, 34%);
+}
+
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    width: 90%;
+    padding: 20px 0 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    width: 35%;
+}
+
+.bottom {
+    display: grid;
+    justify-content: center;
+    gap: 20px 60px;
+    max-width: 70%;
+    grid-template:
+" c a d "
+" c b d ";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: gray;
+    text-align: left;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px 30px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    align-self: flex-end;
+    margin-top: 3em;
+}
+
+.supervisor {
+    grid-area: c;
+    justify-self: end;
+    align-self: center;
+    border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+.builder {
+    grid-area: a;
+    justify-self: center;
+    border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.karma {
+    grid-area: b;
+    justify-self: center;
+    border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.calculator {
+    grid-area: d;
+    align-self: center;
+    border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+@media only screen and (max-width: 900px) {
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top {
+        width: 80%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+
+
